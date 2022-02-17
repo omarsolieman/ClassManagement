@@ -1,5 +1,5 @@
 # Driving School System
-Driving School System app in Django(Python).
+Motor Driving School System in Django(Python).
 
 # Features
 - Material design based UI.
