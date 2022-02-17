@@ -33,7 +33,7 @@ Driving School System app in Django(Python).
  - Contact form support for every visitor of website.
  - Admin have access to all the functionality listed above.
 
-#Necessary Edits
+# Necessary Edits
 - Models are in room_slot/booking/models.py
 - also edit room_slot/api/serializers.py
  
