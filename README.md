@@ -14,7 +14,7 @@ Driving School System app in Django(Python).
  - Git
  - Django
 # How to run the project
- - clone the repository.
+ - clone the repository. `git clone https://github.com/omarsolieman/ClassManagement`
  - Move to newly created git directory as `cd ClassManagement`
  - Install virtualenv as `pip3 install virtualenv`
  - Activate the newly created virtual environement `bookingApp\Scripts\activate`
