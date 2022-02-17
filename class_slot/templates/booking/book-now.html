@@ -12,13 +12,13 @@
       <div class="card-stacked">
         <div class="card-content">
           <span class="red-text text-lighten-2" style="font-size:2rem">{{data.room_type}}</span>
-          <p><b>Class Duration:</b> {{start}} - {{end}}</p>
-          <p><b>Class No: </b> {{data.class_no}}</p>
-          <p><b>Class Time: </b> {{data.class_time}}</p>
+          <p><b>Class Session Date:</b> {{start}} - {{end}}</p>
+          <p><b>Class Session No: </b> {{data.class_no}}</p>
+          <p><b>Class Session Time: </b> {{data.class_time}}</p>
           <p><b>Vehicle Type: </b> {{data.vehicle_type}}</p>
           <p><b>Registration Number: </b> {{data.registration_number}}</p>
-          <p><b>Total Bill: </b> {{no_of_days}}*{{data.price}} = {{bill}} RM</p>
-          <p><b>Class Instructor: </b>{{roomManager}}</p>
+          <p><b>Total Price: </b> {{no_of_days}}*{{data.price}} = {{bill}} RM</p>
+          <p><b>Class Tutor: </b>{{roomManager}}</p>
         </div>
         <div class="card-action center grey lighten-5" >
           <a href="/confirm-now-booking" class="blue-text text-darken-2">Confirm Booking</a>
