@@ -26,15 +26,15 @@ Driving School System app in Django(Python).
  - To deactivate virtual environment anytime use `deactivate`
 # Features of the project
  - Fully responsive website(for both mobile and larger screens) based on google material design.
- - Login/Signup/Logout feature for both Customer and Class Manager.
- - Custom dashboard for both Customer and Class Manager.
- - Facility to add, delete, update rooms by Class Manager.
- - Class Manager can see the details of user that has booked one of his rooms.
- - Customer can cancel the class booking.
+ - Login/Signup/Logout feature for both Student and Tutor.
+ - Custom dashboard for both Student and Tutor.
+ - Facility to add, delete, update rooms by Tutor.
+ - Tutor can see the details of user that has booked one of his classes.
+ - Student can cancel the class booking.
  - Contact form support for every visitor of website.
- - Superuser have access to all the functionality listed above.
+ - Admin have access to all the functionality listed above.
 
-
+#Necessary Edits
 - Models are in room_slot/booking/models.py
 - also edit room_slot/api/serializers.py
  
