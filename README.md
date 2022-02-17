@@ -16,8 +16,7 @@ Driving School System app in Django(Python).
 # How to run the project
  - clone the repository.
  - Move to newly created git directory as `cd ClassManagement`
- - Install virtualenv as `sudo pip3 install virtualenv`
- - Create a new virtual environment as `python3 -m venv demo_venv` (`demo_venv` is the name of your virtual environment, you can name it anything)
+ - Install virtualenv as `pip3 install virtualenv`
  - Activate the newly created virtual environement `bookingApp\Scripts\activate`
  - Install all the dependencies as `pip install -r requirements.txt`
  - Traverse to the room_slot **main** directory as `cd class_slot` (This is the place where all source file are kept).
