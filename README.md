@@ -1,5 +1,5 @@
-# Class Management Django App
-Class booking and management app in Django(Python).
+# Driving School System
+Driving School System app in Django(Python).
 
 # Features
 - Material design based UI.
