@@ -1,4 +1,4 @@
-# Driving School System
+# Motor Driving School System
 Motor Driving School System in Django(Python).
 
 # Features
