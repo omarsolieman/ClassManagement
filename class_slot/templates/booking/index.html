@@ -29,144 +29,6 @@
 </div>
 <div class="divider"></div>
 
-{% comment %} <div class="row" style="margin-top:3%">
-<div class="container">
-    <h3 class="center" style="font-family: 'Gloria Hallelujah', cursive;margin-bottom:7%;margin-top:5%">Services at your Doorstep</h3>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">local_airport</i><br>
-Airport Pick and Drop
-</div>
-</div>
-</div>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">free_breakfast</i><br>
-Free Breakfast
-</div>
-</div>
-</div>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">wifi</i><br>
-Free High speed wifi
-</div>
-</div>
-</div>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">live_tv</i><br>
-LED TV with Tata Sky
-</div>
-</div>
-</div>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">restaurant</i><br>
-24&#10006;7 Local Restaurant
-</div>
-</div>
-</div>
-<div class="col l2 m3 s4">
-<div class="card-panel teal lighten-4">
-<div class="center">
-<i class="material-icons red-text small">accessibility</i><br>
-Free Gymnasium
-</div>
-</div>
-</div>
-
-</div>
-</div> {% endcomment %}
-{% comment %} <div class="row">
-    <div class="container">
-    <h3 class="center" style="font-family: 'Gloria Hallelujah', cursive;margin-bottom:7%;margin-top:5%">Classes for Every Vehicle & Need</h3>
-        <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'christopher-jolly-GqbU78bdJFM-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 1000</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-                        Single Bed Room
-                    </span>
-                </div>
-            </div>
-            {% csrf_token %}
-        </div>
-             <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'stephen-leonardi--TsLaYk1DLM-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 1700</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-                        Double Bed Room
-                    </span>
-                </div>
-            </div>
-        </div>
-             <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'ralph-kayden-FqqiAvJejto-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 1500</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-                       King-sized Bed Room
-                    </span>
-                </div>
-            </div>
-        </div>
-          <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'roberto-nickson-EeeKjwm2vDo-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 2500</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-Room with View
-                    </span>
-                </div>
-            </div>
-        </div>
-               <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'keytion-7LR0xIBbUUI-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 2000</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-                      Double room with working tables
-                    </span>
-                </div>
-            </div>
-        </div>
-               <div class="col l4 m6 s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{% static 'dan-ramsay-_hDFophEkyM-unsplash.jpg'%}" alt="">
-                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&#x20b9; 5000</a>
-                </div>
-                <div class="card-content">
-                    <span class="card-title brown-text">
-                      Sea facing rooms
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> {% endcomment %}
 <script>
 // Accept datepicker-start or datepicker-end, as we need to initialize both anyway.
 $("input[class*='datepicker-']").pickadate({
@@ -201,44 +63,41 @@ $("input[class*='datepicker-']").pickadate({
 </script>
 <script>
 const room_btn=document.getElementById("show_me_rooms")
-room_btn.addEventListener("click",(e)=>
-{
+room_btn.addEventListener("click",(e)=> {
 e.preventDefault()
 startDate=$('.datepicker-start').val();
 //endDate=$('.datepicker-end').val();
 //d = new Date(endDate);    
 sd=new Date(startDate)
 td=new Date()
-if (sd<td || startDate.length==0)
-{
-alert("Please choose a valid date")
-}
-else
-{
-     var form = document.createElement("form");
-    var element1 = document.createElement("input"); 
-    var element2 = document.createElement("input");  
-    var element3= document.createElement("input");  
+    if (sd<td || startDate.length==0) {
+        alert("Please choose a valid date")
+    }
+    else {
+        var form = document.createElement("form");
+        var element1 = document.createElement("input"); 
+        var element2 = document.createElement("input");  
+        var element3= document.createElement("input");  
 
-    form.method = "POST";
-    form.action = "/book";   
-    
-    element1.name="start_date";
-    element1.type="text"
-    element1.value=startDate;
-    form.appendChild(element1);  
+        form.method = "POST";
+        form.action = "/book";   
+        
+        element1.name="start_date";
+        element1.type="text"
+        element1.value=startDate;
+        form.appendChild(element1);  
 
- /*element2.name="end_date";
-    element2.type="text"
-   element2.value=endDate;
-    form.appendChild(element2);*/ 
-     element3.value='{{csrf_token}}';
-    element3.name="csrfmiddlewaretoken";
-    element3.type="hidden"
-    form.appendChild(element3);  
-    document.body.appendChild(form);
-   form.submit(); 
-}
+        /*element2.name="end_date";
+        element2.type="text"
+        element2.value=endDate;
+        form.appendChild(element2);*/ 
+        element3.value='{{csrf_token}}';
+        element3.name="csrfmiddlewaretoken";
+        element3.type="hidden"
+        form.appendChild(element3);  
+        document.body.appendChild(form);
+        form.submit(); 
+    }
 })
 </script>
 {% endblock %}

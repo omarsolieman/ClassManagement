@@ -25,32 +25,32 @@
 <h3 style="font-family: 'Roboto'" class='brown-text'>Booking History</h3>
 <div id="message">
 </div>
-       {% if  data %}
-        <table class="highlight bordered responsive-table">
+  {% if  data %}
+    <table class="highlight bordered responsive-table">
         <thead>
           <tr>
               <th>Booking ID</th>
               <th>Booked On</th>
-              {% comment %} <th>Class Time</th>
+              <th>Session ID</th>
               <th>Vehicle Type</th>
-              <th>Registration number</th> {% endcomment %}
-              <th>Start Date</th>
-              {% comment %} <th>End Date</th> {% endcomment %}
-              <th>Billing</th>
-              <th>Class Manager</th>
+              <th>Registration number</th>
+              <th>Session Date</th>
+              <th>Session Time</th>
+              <th>Price</th>
+              <th>Tutor</th>
               <th>Action</th>
           </tr>
         </thead>
-        <tbody>
-       {% for d in data %}
-                 <tr>
+      <tbody>
+  {% for d in data %}
+          <tr>
             <td>{{d.id}}</td>
             <td>{{d.booked_on}}</td>
-            {% comment %} <td>{{d.class_time}}</td>
-            <td>{{d.vehicle_type}}</td>
-            <td>{{d.registration_number}}</td> {% endcomment %}
+            <td>{{d.class_no.class_no}}</td>
+            <td>{{d.class_no.vehicle_type}}</td>
+            <td>{{d.class_no.registration_number}}</td>
             <td>{{d.start_day}}</td>
-            {% comment %} <td>{{d.end_day}}</td> {% endcomment %}
+            <td>{{d.class_no.class_time}}</td>
             <td>{{d.amount}}</td>
             <td>{{d.class_no.manager.username}}</td>
             {% if d.is_past_due %}
@@ -60,8 +60,8 @@
             {% endif %}
           </tr>
        {% endfor %}
-               </tbody>
-      </table>
+      </tbody>
+    </table>
        {% else %}
 <div col="l8 offset-l2 m10 offset-m1 s12">
 Sorry You haven't booked any room so far.

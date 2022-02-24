@@ -82,7 +82,7 @@ def user_signup(request):
         else:
             password=request.POST['password']
             address=request.POST['address']
-            pin_code=request.POST['pin_code']
+            # pin_code=request.POST['pin_code']
             profile_pic=request.FILES.get('profile_pic',None)
             phone_no=request.POST['phone_no']
             state=request.POST['state']
@@ -101,7 +101,7 @@ def user_signup(request):
                 messages.warning(request,"Valid Phone number is a 10 digit-integer.")
             if(len(error)==0):
                 password_hash = make_password(password)
-                customer=Customer(username=username,password=password_hash,email=email,phone_no=phone_no,address=address,state=state,pin_code=pin_code,profile_pic=profile_pic)
+                customer=Customer(username=username,password=password_hash,email=email,phone_no=phone_no,address=address,state=state,profile_pic=profile_pic)
                 customer.save()
                 messages.info(request,"Account Created Successfully, please Login to continue")
                 redirect('user_signup')

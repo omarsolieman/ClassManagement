@@ -8,7 +8,7 @@ class Customer(models.Model):
     phone_no=models.CharField(max_length=50)
     address=models.TextField()
     state=models.CharField(max_length=30,blank=True)
-    pin_code=models.IntegerField(blank=True)
+    # pin_code=models.IntegerField(blank=True)
     def __str__(self):
         return "Customer: "+self.username
 class RoomManager(models.Model):

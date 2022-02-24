@@ -99,9 +99,9 @@ vertical-align: middle;">face</i> &nbsp;&nbsp;<p style="display:inline">
         </select>
       </div>
       {% csrf_token %}
-      <div class="input-field col s12">
+      {% comment %} <div class="input-field col s12">
         <input type="text" name="pin_code" id="pin_code" required placeholder="Postcode">
-      </div>
+      </div> {% endcomment %}
        <div class="file-field input-field col s12">
      <div class="btn red lighten-2">
        <span><i class="material-icons left black-text text-lighten-1">mood</i> Profile Pic</span>
